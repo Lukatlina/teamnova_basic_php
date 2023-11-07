@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weverse Account</title>
+    <link rel="stylesheet" type="text/css" href = "login_style.css">
+    <link rel="stylesheet" type="text/css" href = "weverse.css">
+    <style>
+        html{font-size: 10px;}
+        @media screen and (min-width: 768px) {
+        body {
+            background-color: rgb(250, 251, 252);
+        }
+        @media screen and (min-width: 768px) {
+            .signinscreen {
+                padding: 0px;
+                height: auto;
+                }
+            }
+        @media screen and (min-width: 768px) {
+            .signinscreen {
+                margin: 38px auto;
+                padding: 0px 77px;
+                width: 768px;
+                border: 1px solid rgb(245, 247, 250);
+            }
+        }
+    }
+    
+    </style>
+    
+</head>
+<body>
+    <div id="next">
+        <div class="signinscreen">
+            <div class="signin_img">
+                <img src="weverse_account.png" width="201" height="18" alt="weverse account" class="signin_img_1">
+            </div>
+            <div class="signinscreen_box">
+                <h1 class="signin_box_header">위버스 계정으로 로그인해주세요.</h1>
+                <form method="POST" action="weverse_main.html" >
+                    <div class="signin_email">
+                        <label class="email_label">이메일</label>
+                        <div class="text_box">
+                            <input type="text" aria-required="true" name="email" placeholder="your@email.com"
+                            class="email_text_box_input">
+                            <button tabindex="-1" type="button" class="delete_login"></button>
+                            <hr class="delete_button_img">
+                        </div>
+                        <div class="email_check">
+                            <strong class="email_check_text"></strong>
+                        </div>
+                    </div>
+                    <div class="signin_password">
+                        <div class="signin_email">
+                            <label class="signin_password_label">비밀번호</label>
+                            <div class="text_box">
+                                <input type="password" aria-required="true" name="password" placeholder="비밀번호"
+                                class="password_text_box_input">
+                                <button tabindex="-1" type="button" class="delete_login"></button>
+                                <button tabindex="-1" type="button" class="show_login"></button>
+                                <hr class="show_btn_img">
+                            </div>
+                            <div class="password_check">
+                                <strong class="password_check_text"></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signinscreen_box_btn">
+                        <button type="submit" class="continue_login_btn" value="submit">
+                            <span class="continue_login_text">로그인</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
